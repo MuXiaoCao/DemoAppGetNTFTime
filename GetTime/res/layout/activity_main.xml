@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.gettime.MainActivity" >
+	
+    <TextView 
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <Button 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_time_stop"
+        android:text="stop"
+        android:gravity="center"/>
+    <Button android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_time_start"
+        android:text="start"
+        android:gravity="center"/>
+    <Button android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_time_restart"
+        android:text="restart"
+        android:gravity="center"/>
+    </LinearLayout>
+    <TextView 
+        android:id="@+id/tv_offsetTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ListView
+        android:id="@+id/lv_ntf_server"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>
