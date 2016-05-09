@@ -41,7 +41,6 @@ public class MainActivity extends Activity {
 						+ "本地发送时间：" + nf.format(msg.getData().getDouble(NetUtil.ORIGINATE_KEY)) + "\n"
 						+ "服务器发送时间：" + nf.format(msg.getData().getDouble(NetUtil.TRANSMIT_KEY)) + "\n"
 						+ "本地接收时间：" + nf.format(msg.getData().getDouble(NetUtil.DESTINATION_KEY)));
-				System.out.println("=================================" + offset);
 			}else if(msg.what == NetUtil.FLESH_TIME_WHAT){
 				double localtime = (System.currentTimeMillis()/1000.0) + 2208988800.0;
 				double time = localtime + offset;
@@ -93,7 +92,7 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		initView();
 		nf.setGroupingUsed(false);
-		getServerTime();
+		//getServerTime();
 		//getTime();
 
 	}
